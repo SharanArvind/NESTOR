@@ -30,7 +30,7 @@ $.ajax({
    url: “https://github.com/SharanArvind/NESTOR.git”,
      //this is sample url of a localhost. 
      //This should include the url where you are hosting the bot.
-   botOptions.userIdentity = ‘ ‘;
+   botOptions.userIdentity = ‘vigneshkrishna1607@gmail.com‘;
      // Provide users email id here
    botOptions.clientId= "cs-f8e68290-495c-5116-8cc6-7743179c7c84";
      // secure client-id
