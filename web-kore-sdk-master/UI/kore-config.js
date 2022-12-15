@@ -11,19 +11,33 @@
     botOptions.koreAnonymousFn = koreAnonymousFn;
     botOptions.recorderWorkerPath = '../libs/recorderWorker.js';
 
-    botOptions.JWTUrl = "PLEASE_ENTER_JWTURL_HERE";
-    botOptions.userIdentity = 'PLEASE_ENTER_USER_EMAIL_ID';// Provide users email id here
-    botOptions.botInfo = { name: "PLEASE_ENTER_BOT_NAME", "_id": "PLEASE_ENTER_BOT_ID" }; // bot name is case sensitive
+    botOptions.JWTUrl = "https://github.com/SharanArvind/NESTOR.git";
+    botOptions.userIdentity = 'vigneshkrishna1607@gmail.com';// Provide users email id here
+    botOptions.botInfo = { name: "Nestor", "_id": "st-9f5d9830-543e-5e49-849f-62edafc03e46" }; // bot name is case sensitive
 
     /* 
     Important Note: These keys are provided here for quick demos to generate JWT token at client side but not for Production environment.
     Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
     https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
     **/
-    botOptions.clientId = "PLEASE_ENTER_CLIENT_ID";
-    botOptions.clientSecret = "PLEASE_ENTER_CLIENT_SECRET";
+    botOptions.clientId = "cs-f8e68290-495c-5116-8cc6-7743179c7c84";
+    botOptions.clientSecret = "NagSTFtpgLd8w2qGhjwBMPqdN+WDT+uBmBdQVuUPRqI=";
     botOptions.brandingAPIUrl = botOptions.koreAPIUrl +'websdkthemes/'+  botOptions.botInfo._id+'/activetheme';
     botOptions.enableThemes = true;
+    
+    “clientSecret”: “NagSTFtpgLd8w2qGhjwBMPqdN+WDT+uBmBdQVuUPRqI=”
+$.ajax({
+   url: “https://github.com/SharanArvind/NESTOR.git”,
+     //this is sample url of a localhost. 
+     //This should include the url where you are hosting the bot.
+   botOptions.userIdentity = ‘ ‘;
+     // Provide users email id here
+   botOptions.clientId= "cs-f8e68290-495c-5116-8cc6-7743179c7c84";
+     // secure client-id
+   _botOptions.botInfo= {name:"Nestor","id":"st-9f5d9830-543e-5e49-849f-62edafc03e46"};
+     // Kore bot name is case sensitive
+ })
+
 // for webhook based communication use following option 
 // botOptions.webhookConfig={
 //     enable:true,
